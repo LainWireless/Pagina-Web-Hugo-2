@@ -1,5 +1,5 @@
 publishDir = "docs"
-baseURL = "http://example.org/"
+baseURL = "https://lainwireless.github.io/"
 languageCode = "en-us"
 title = "Página Web de Iván" 
 theme = "blackburn"
