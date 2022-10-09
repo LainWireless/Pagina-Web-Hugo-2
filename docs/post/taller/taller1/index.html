@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  <title>Taller 1 - Instalación de Debian 11 en el equipo de trabajo &middot; Página Web de Iván</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://example.org/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://example.org/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://example.org/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" type="text/css">
+
+  
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/androidstudio.min.css">
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://example.org/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://example.org/">Blackburn</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://example.org/"><i class='fa fa-home fa-fw'></i>Inicio</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://example.org/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://example.org/about/"><i class='fa fa-user fa-fw'></i>Sobre mí</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/LainWireless" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Taller 1 - Instalación de Debian 11 en el equipo de trabajo</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>06 Oct 2022, 00:00</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  <h3 id="tarea-instalación-de-debian-11-en-el-equipo-de-trabajo">Tarea: Instalación de Debian 11 en el equipo de trabajo</h3>
+<h4 id="descripción">Descripción</h4>
+<p>Describe de forma detallada los pasos que has seguido para la instalación y configuración de Debian bullseye en tu portátil. Comenta las incidencias encontradas, y procedimientos empleado en su solución.
+Utiliza un lenguaje claro y técnico.</p>
+<h4 id="entrega">Entrega</h4>
+<p>Al instalar <strong>Debian 11</strong> en un <strong>disco externo de 1TB</strong> he tenido algún que otro problema a la hora de que el ordenador reconociese una vez ya instalado Debian que en el disco se encontraba el sistema operativo.</p>
+<p>El paso de instalar Debian en el disco externo fue fácil, solo me encontré con un error en el <em>grub-dummy</em> ya que no le estaba dando el sistema de ficheros adecuados a la partición boot.</p>
+<p>Paso a explicar como está instalado mi sistema.</p>
+<h4 id="particiones">Particiones:</h4>
+<table>
+<thead>
+<tr>
+<th>Partición</th>
+<th>Tamaño</th>
+<th>Sistema de ficheros</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LVM /</td>
+<td>50 GB</td>
+<td>xfs</td>
+</tr>
+<tr>
+<td>EFI</td>
+<td>100 MB</td>
+<td></td>
+</tr>
+<tr>
+<td>/boot</td>
+<td>1 GB</td>
+<td>ext2</td>
+</tr>
+<tr>
+<td>LVM /home</td>
+<td>60 GB</td>
+<td>xfs</td>
+</tr>
+<tr>
+<td>LVM /var</td>
+<td>200 GB</td>
+<td>xfs</td>
+</tr>
+<tr>
+<td>SWAP</td>
+<td>4 GB</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>He elegido el sistema de ficheros xfs ya que es bastante rápido. El resto del disco duro está dentro del grupo de volumen lógico llamado VG02, así en un futuro se podrá expandir cualquiera de los otros volúmenes lógicos. Para el entorno gráfico he elegido xfce, para que así me vaya el SO lo más fluido posible ya que al estar instalado en un disco extraíble va un poco más lento.</p>
+<p>Para resolver el único problema que tuve la solución fue instalar un Debian 11 pero esta vez en el disco duro del ordenador de sobremesa del instituto. Decidí formatear el disco, eliminado Windows.</p>
+<h4 id="particiones-1">Particiones:</h4>
+<table>
+<thead>
+<tr>
+<th>Partición</th>
+<th>Tamaño</th>
+<th>Sistema de ficheros</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LVM /</td>
+<td>30 GB</td>
+<td>xfs</td>
+</tr>
+<tr>
+<td>EFI</td>
+<td>100 MB</td>
+<td>FAT32</td>
+</tr>
+<tr>
+<td>/boot</td>
+<td>1 GB</td>
+<td>ext2</td>
+</tr>
+<tr>
+<td>LVM /home</td>
+<td>40 GB</td>
+<td>xfs</td>
+</tr>
+<tr>
+<td>LVM /var</td>
+<td>100 GB</td>
+<td>xfs</td>
+</tr>
+<tr>
+<td>SWAP</td>
+<td>4 GB</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Al terminar la instalación, el GRUB del SO del ordenador de clase me reconocía sin problemas mi Debian.
+Acto seguido me puse a instalarle los <strong>drivers de la tarjeta de red del ordenador de mi casa y los drivers de nvidia para mi tarjeta gráfica</strong>. Sin problemas los conseguí instalar.</p>
+<p>Sin embargo al llegar a casa, mi ordenador tampoco reconocía que en mi disco externo hubiese un S0 instalado. Así que repetí el mismo paso que hice en clase: instalé un Debian en una partición de 10GB que tenía reservada para casos en los que simplemente necesitase un S0 para utilizarlo como GRUB.</p>
+<h4 id="particiones-2">Particiones:</h4>
+<table>
+<thead>
+<tr>
+<th>Partición</th>
+<th>Tamaño</th>
+<th>Sistema de ficheros</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/</td>
+<td>7.4 GB</td>
+<td>xfs</td>
+</tr>
+<tr>
+<td>EFI</td>
+<td>100 MB</td>
+<td>FAT32</td>
+</tr>
+<tr>
+<td>/boot</td>
+<td>500 MB</td>
+<td>ext2</td>
+</tr>
+<tr>
+<td>SWAP</td>
+<td>2 GB</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Tras esto al iniciar mi Debian mediante el GRUB del nuevo que instalé en mi equipo, me percaté de otro error. El fstab se había auto configurado de manera que el <strong>UUID del EFI y la SWAP</strong> eran los del Debian que instalé en el PC de clase. Simplemente tuve que cambiarlo por los UUID de los del Debian de mi disco externo.</p>
+<p>Tras todo esto, mi Debian funciona perfectamente. Ha sido algo enrevesado pero me esperaba que fuera así ya que ir con un SO instalado en un disco externo puede causar problemas.</p>
+
+  
+  <h4><i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
+<ul class="share-buttons">
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fexample.org%2fpost%2ftaller%2ftaller1%2f" target="_blank" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="https://twitter.com/intent/tweet?source=http%3a%2f%2fexample.org%2fpost%2ftaller%2ftaller1%2f" target="_blank" title="Tweet"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="https://plus.google.com/share?url=http%3a%2f%2fexample.org%2fpost%2ftaller%2ftaller1%2f" target="_blank" title="Share on Google+"><i class="fab fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://www.tumblr.com/share?v=3&u=http%3a%2f%2fexample.org%2fpost%2ftaller%2ftaller1%2f" target="_blank" title="Post to Tumblr"><i class="fab fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fexample.org%2fpost%2ftaller%2ftaller1%2f" target="_blank" title="Pin it"><i class="fab fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://www.reddit.com/submit?url=http%3a%2f%2fexample.org%2fpost%2ftaller%2ftaller1%2f" target="_blank" title="Submit to Reddit"><i class="fab fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
+	</li>
+</ul>
+
+
+<style>
+	ul.share-buttons{
+	  list-style: none;
+	  padding: 0;
+	}
+
+	ul.share-buttons li{
+	  display: inline;
+	}
+
+	ul.share-buttons .sr-only{
+	  position: absolute;
+	  clip: rect(1px 1px 1px 1px);
+	  clip: rect(1px, 1px, 1px, 1px);
+	  padding: 0;
+	  border: 0;
+	  height: 1px;
+	  width: 1px;
+	  overflow: hidden;
+	}
+</style>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="next">
+      <a href="http://example.org/post/practica/practica1/">Práctica 1 - Creación de un sistema automatizado de instalación</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://example.org/post/practica/practica1/"><i class="fa fa-chevron-right"></i></a>
+    
+  </div>
+</div>
+
+
+  
+  
+  
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Your Disqus shortname';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="http://example.org/js/ui.js"></script>
+<script src="http://example.org/js/menus.js"></script>
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=Your%20Google%20Analytics%20tracking%20ID"></script>
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'Your Google Analytics tracking ID');
+  }
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
