@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Página Web de Iván</title>
-    <link>https://lainwireless.github.io/post/</link>
+    <link>https://lainwireless.github.io/Pagina-Web-Hugo-2/post/</link>
     <description>Recent content in Posts on Página Web de Iván</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lainwireless.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lainwireless.github.io/Pagina-Web-Hugo-2/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Práctica 1 - Creación de un sistema automatizado de instalación</title>
-      <link>https://lainwireless.github.io/post/practica/practica1/</link>
+      <link>https://lainwireless.github.io/Pagina-Web-Hugo-2/post/practica/practica1/</link>
       <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://lainwireless.github.io/post/practica/practica1/</guid>
+      <guid>https://lainwireless.github.io/Pagina-Web-Hugo-2/post/practica/practica1/</guid>
       <description>Tarea: Creación de un sistema automatizado de instalación Descripción Se deberá configurar el sistema para que se responda automáticamente a todos los item en la instalación. Las diferentes contraseñas deberán codificarse para que no aparezcan en texto plano. Se trabajará con un esquema lvm creando volúmenes lógicos /, home y var.
  Instalación basada en fichero de configuración preseed.   Instalación automatizada basada en medio de almacenamiento extraíble. Instalación automatizada con carga de preseed desde red.</description>
     </item>
     
     <item>
       <title>Taller 1 - Instalación de Debian 11 en el equipo de trabajo</title>
-      <link>https://lainwireless.github.io/post/taller/taller1/</link>
+      <link>https://lainwireless.github.io/Pagina-Web-Hugo-2/post/taller/taller1/</link>
       <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://lainwireless.github.io/post/taller/taller1/</guid>
+      <guid>https://lainwireless.github.io/Pagina-Web-Hugo-2/post/taller/taller1/</guid>
       <description>Tarea: Instalación de Debian 11 en el equipo de trabajo Descripción Describe de forma detallada los pasos que has seguido para la instalación y configuración de Debian bullseye en tu portátil. Comenta las incidencias encontradas, y procedimientos empleado en su solución. Utiliza un lenguaje claro y técnico.
 Entrega Al instalar Debian 11 en un disco externo de 1TB he tenido algún que otro problema a la hora de que el ordenador reconociese una vez ya instalado Debian que en el disco se encontraba el sistema operativo.</description>
     </item>
