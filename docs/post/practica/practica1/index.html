@@ -23,13 +23,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="http://example.org/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="https://lainwireless.github.io/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="http://example.org/css/side-menu.css">
+  <link rel="stylesheet" href="https://lainwireless.github.io/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="http://example.org/css/blackburn.css">
+  <link rel="stylesheet" href="https://lainwireless.github.io/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
@@ -51,7 +51,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="http://example.org/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="https://lainwireless.github.io/img/favicon.ico" type="image/x-icon" />
 
   
   
@@ -70,7 +70,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="http://example.org/">Blackburn</a>
+  <a class="pure-menu-heading brand" href="https://lainwireless.github.io/">Blackburn</a>
 
 
   <div class="pure-menu">
@@ -78,19 +78,19 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://example.org/"><i class='fa fa-home fa-fw'></i>Inicio</a>
+          <a class="pure-menu-link" href="https://lainwireless.github.io/"><i class='fa fa-home fa-fw'></i>Inicio</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://example.org/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+          <a class="pure-menu-link" href="https://lainwireless.github.io/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://example.org/about/"><i class='fa fa-user fa-fw'></i>Sobre mí</a>
+          <a class="pure-menu-link" href="https://lainwireless.github.io/about/"><i class='fa fa-user fa-fw'></i>Sobre mí</a>
       
         </li>
       
@@ -651,13 +651,13 @@ label unattended-gnome
 genisoimage -o cd-preseed.iso -l -r -J -no-emul-boot -boot-load-size <span style="color:#ae81ff">4</span> -boot-info-table -b isolinux/isolinux.bin -c isolinux/boot.cat iso-preseed
 </code></pre></div><p>Tras realizar estos comandos, vemos que se ha creado un archivo nuevo llamada <strong>cd-preseed.iso</strong></p>
 <p>Para que el cliente utilice la iso lo añadiremos como un CD:
-<img src="http://example.org/images/1.png" alt="imagen1"></p>
+<img src="https://lainwireless.github.io/images/1.png" alt="imagen1"></p>
 <p>Activaremos el arranque mediante CD:
-<img src="http://example.org/images/2.png" alt="imagen2"></p>
+<img src="https://lainwireless.github.io/images/2.png" alt="imagen2"></p>
 <p>Como se puede ver en la captura aparece mi instalación desatendida:
-<img src="http://example.org/images/3.png" alt="imagen3"></p>
+<img src="https://lainwireless.github.io/images/3.png" alt="imagen3"></p>
 <p>En esta última captura muestro que se han creado los volúmenes lógicos perfectamente:
-<img src="http://example.org/images/4.png" alt="imagen4"></p>
+<img src="https://lainwireless.github.io/images/4.png" alt="imagen4"></p>
 <h4 id="2-instalación-automatizada-con-carga-de-preseed-desde-red">2. Instalación automatizada con carga de preseed desde red.</h4>
 <p>Ahora en esta ocasión necesitaremos un servidor Apache ya que haremos la instlación desde un Servidor Web.</p>
 <p>Para instalar Apache:</p>
@@ -667,14 +667,14 @@ genisoimage -o cd-preseed.iso -l -r -J -no-emul-boot -boot-load-size <span style
 </code></pre></div><p>Lo más seguro es que no tengamos el preseed en nuestro servidor web ya que lo acabaremos de crear en una máquina virtual. Para ello nos podemos ayudar de <strong>scp</strong>. Para ello necesitaremos la clave pública de nuestro host en nuestro servidor web.
 También tenemos que tener en cuenta de que la máquina servidor y la cliente tienen que tener una interfaz que permitan que estén en la misma red. Con virt-manager es fácil de hacer. En esta ocasión no hay ningún problema si las dejamos con la red NAT default de virt-manager.</p>
 <p>Una vez todo esto hecho, arrancaremos la máquina cliente mediante una iso de debian pero nos dirigiremos a Advanced Options y ahí eligiremos Automated Install:
-<img src="http://example.org/images/5.png" alt="imagen5"></p>
+<img src="https://lainwireless.github.io/images/5.png" alt="imagen5"></p>
 <p>Luego tendremos que indicar la ip de nuestro servidor y el archivo preseed:
-<img src="http://example.org/images/6.png" alt="imagen6"></p>
+<img src="https://lainwireless.github.io/images/6.png" alt="imagen6"></p>
 <p>Y con esto ya se estaría realizando una instalación desatendida por red.</p>
 <h4 id="3-instalación-basada-en-preseedpxetftp">3. Instalación basada en preseed/PXE/TFTP.</h4>
 <p>Para este caso convertiremos nuestro anterior servidor web también en un servidor DHCP y en uno TFTP.
 Es importante no utilizar una configuración de interfaz de red con DHCP, por lo que la anterior ya no es válida en su lugar utilizaremos la siguiente tanto para la máquina cliente como la servidor:
-<img src="http://example.org/images/7.png" alt="imagen7"></p>
+<img src="https://lainwireless.github.io/images/7.png" alt="imagen7"></p>
 <p>La IP de nuestro servidor tendremos que configurarla de manera estática, en mi caso le di la 192.168.100.90. La IP de mi host es la 192.168.100.1. Es importante tener estas dos IPs en cuenta para realizar la configuración DHCP.
 Para ello hacemos:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo nano /etc/network/interfaces
@@ -732,30 +732,30 @@ Primero lo instalamos:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl restart tftpd-hpa
 </code></pre></div><p>El archivo de configuración del preseed lo seguimos dejando en el directorio <em>/var/www/html</em></p>
 <p>En cuanto a nuestra máquina cliente, es importante que el arranque solo pueda hacerse por red y por el disco duro que tiene, nada de CD. Una vez terminada la instalación debemos quitar el arranque por red para una mayor seguridad.
-<img src="http://example.org/images/8.png" alt="imagen8"></p>
+<img src="https://lainwireless.github.io/images/8.png" alt="imagen8"></p>
 <p>Una vez inicado el cliente nos toparemos con esto:
-<img src="http://example.org/images/9.png" alt="imagen9"></p>
+<img src="https://lainwireless.github.io/images/9.png" alt="imagen9"></p>
 <p>Una vez se haya conectado con el servidor deberemos seleccionar la opción de <strong>Advanced Options</strong>:
-<img src="http://example.org/images/10.png" alt="imagen10"></p>
+<img src="https://lainwireless.github.io/images/10.png" alt="imagen10"></p>
 <p>Ahora en el nuevo submenú seleccionamos <strong>Automated Install</strong>:
-<img src="http://example.org/images/11.png" alt="imagen11"></p>
+<img src="https://lainwireless.github.io/images/11.png" alt="imagen11"></p>
 <p>Para terminar introducimos la dirección de nuestro fichero <strong>preseed.cfg</strong> y se nos comenzará a instalar nuestro Debian:</p>
-<p><img src="http://example.org/images/12.png" alt="imagen12"></p>
+<p><img src="https://lainwireless.github.io/images/12.png" alt="imagen12"></p>
 
   
   <h4><i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
 <ul class="share-buttons">
-	<li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fexample.org%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2flainwireless.github.io%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://twitter.com/intent/tweet?source=http%3a%2f%2fexample.org%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Tweet"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
+	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2flainwireless.github.io%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Tweet"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://plus.google.com/share?url=http%3a%2f%2fexample.org%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Share on Google+"><i class="fab fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
+	<li><a href="https://plus.google.com/share?url=https%3a%2f%2flainwireless.github.io%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Share on Google+"><i class="fab fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.tumblr.com/share?v=3&u=http%3a%2f%2fexample.org%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Post to Tumblr"><i class="fab fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
+	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2flainwireless.github.io%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Post to Tumblr"><i class="fab fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fexample.org%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Pin it"><i class="fab fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
+	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2flainwireless.github.io%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Pin it"><i class="fab fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.reddit.com/submit?url=http%3a%2f%2fexample.org%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Submit to Reddit"><i class="fab fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
+	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2flainwireless.github.io%2fpost%2fpractica%2fpractica1%2f" target="_blank" title="Submit to Reddit"><i class="fab fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
 	</li>
 </ul>
 
@@ -787,13 +787,13 @@ Primero lo instalamos:</p>
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="http://example.org/post/taller/taller1/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://lainwireless.github.io/post/taller/taller1/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="http://example.org/post/taller/taller1/">Taller 1 - Instalación de Debian 11 en el equipo de trabajo</a>
+      <a href="https://lainwireless.github.io/post/taller/taller1/">Taller 1 - Instalación de Debian 11 en el equipo de trabajo</a>
     </nav>
     
   </div>
@@ -838,8 +838,8 @@ Primero lo instalamos:</p>
 
 </div>
 </div>
-<script src="http://example.org/js/ui.js"></script>
-<script src="http://example.org/js/menus.js"></script>
+<script src="https://lainwireless.github.io/js/ui.js"></script>
+<script src="https://lainwireless.github.io/js/menus.js"></script>
 
 
 
@@ -862,7 +862,7 @@ Primero lo instalamos:</p>
 
 
 
-<script src="http://example.org/js/math-code.js"></script>
+<script src="https://lainwireless.github.io/js/math-code.js"></script>
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   
 
