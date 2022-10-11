@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lainwireless.github.io/Pagina-Web-Hugo-2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lainwireless.github.io/Pagina-Web-Hugo-2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vulnerabilidad, Exploit y Payload</title>
+      <link>https://lainwireless.github.io/Pagina-Web-Hugo-2/post/articulo/articulo1/</link>
+      <pubDate>Tue, 11 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lainwireless.github.io/Pagina-Web-Hugo-2/post/articulo/articulo1/</guid>
+      <description>¿Qué diferencia hay entre exploit, vulnerabilidad y payload? En seguridad informática es muy habitual confundir estos tres conceptos, y por ello vamos a ver que es un exploit, una vulnerabilidad y un payload. Un exploit tiene como objetivo comprometer, romper y explotar vulnerabilidades de los sistemas.
+Debemos tener en cuenta que estos términos son utilizados principalmente cuando realizamos pruebas de penetración o ejercicios de hacking ético. ¿En qué parte del hacking podemos encontrarnos con estos términos?</description>
+    </item>
+    
     <item>
       <title>Prueba - Introducción a la implantación de aplicaciones web.</title>
       <link>https://lainwireless.github.io/Pagina-Web-Hugo-2/post/practica/prueba1/</link>

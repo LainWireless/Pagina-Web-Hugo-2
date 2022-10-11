@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  <title>Vulnerabilidad, Exploit y Payload &middot; Página Web de Iván</title>
+
+    
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/1.0.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://lainwireless.github.io/Pagina-Web-Hugo-2/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://lainwireless.github.io/Pagina-Web-Hugo-2/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://lainwireless.github.io/Pagina-Web-Hugo-2/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" type="text/css">
+
+  
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+ 
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/androidstudio.min.css">
+  <script async src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+  
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="https://lainwireless.github.io/Pagina-Web-Hugo-2/img/favicon.ico" type="image/x-icon" />
+
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="https://lainwireless.github.io/Pagina-Web-Hugo-2/">Blackburn</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://lainwireless.github.io/Pagina-Web-Hugo-2/"><i class='fa fa-home fa-fw'></i>Inicio</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://lainwireless.github.io/Pagina-Web-Hugo-2/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="https://lainwireless.github.io/Pagina-Web-Hugo-2/about/"><i class='fa fa-user fa-fw'></i>Sobre mí</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/LainWireless" rel="me" target="_blank"><i class="fab fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Vulnerabilidad, Exploit y Payload</h1>
+  <h2></h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>11 Oct 2022, 00:00</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  <h1 id="qué-diferencia-hay-entre-exploit-vulnerabilidad-y-payload">¿Qué diferencia hay entre exploit, vulnerabilidad y payload?</h1>
+<p><img src="https://img.freepik.com/vector-premium/banner-tecnologia-digital-seguridad-abstracta_43778-429.jpg?w=900" alt="Banner"></p>
+<p>En seguridad informática es muy habitual confundir estos tres conceptos, y por ello vamos a ver que es un exploit, una vulnerabilidad y un payload. Un exploit tiene como objetivo comprometer, romper y explotar vulnerabilidades de los sistemas.</p>
+<p>Debemos tener en cuenta que estos términos son utilizados principalmente cuando realizamos pruebas de penetración o ejercicios de hacking ético.
+¿En qué parte del hacking podemos encontrarnos con estos términos?
+Lo vemos en la fase de explotación, es decir, una vez que conocemos las características del sistema que tienen las máquinas a las que queremos acceder, podemos investigar si existen vulnerabilidades para esos sistemas, y en el caso afirmativo, (que de costumbre es que sí) sería el momento de buscar algún exploit para romper dicha vulnerabilidad.</p>
+<p>Pero vamos a ver cada uno de ellos y como se interrelacionan</p>
+<h2 id="qué-es-un-exploit">¿Qué es un exploit?</h2>
+<p>Un exploit es la herramienta(software) con la cual el hacker aprovechará para comprometer, romper y explotar una vulnerabilidad de seguridad del sistema para sus propios fines.</p>
+<p>Esto sucede ya que algunos fabricantes suelen tener fallas de seguridad en sus productos, como por el ejemplo el exploit de día cero, denominado así cuando el desarrollador del producto desconoce de una vulnerabilidad que solo el ciberdelincuente conoce.</p>
+<p><a href="https://www.elcursodelhacker.com/wp-content/uploads/2021/06/exploit2022-1.png">Exploit</a></p>
+<p>Los ciberdelincuentes aplican ingeniería inversa para analizar toda la programación de dicho sistema, de este modo pueden detectar algún error de código y explotarlo.</p>
+<h3 id="tipos">Tipos</h3>
+<ul>
+<li>Exploit remoto:
+Se realizan mediante una conexión víctima con el atacante, todo mediante una red de comunicaciones.
+Por ejemplo, una conexión por internet, por lo general este tipo de ataque suele hacerse mediante el envío y la instalación del software malicioso en el dispositivo.</li>
+</ul>
+<p><a href="https://assets.website-files.com/5ff66329429d880392f6cba2/61c43d47dccfe68a303551d4_exploit%20Preview.png">Exploit</a></p>
+<ul>
+<li>
+<p>Exploit local:
+La principal diferencia con el anterior tipo es que se necesita acceso al sistema antes de efectuar un ataque de explotación. Se necesita burlar al sistema para escalar privilegios en el sistema, donde el ciberdelincuente podría controlar al final todo el sistema.</p>
+</li>
+<li>
+<p>Exploit en cliente:
+Para realizar este tipo de ataques suele influir mucho el phishing para poder comprometer la máquina víctima con un exploit.
+Esto se realiza principalmente en las estaciones de trabajo de una organización atacando los softwares de ofimática mediante envío de malware por correos electrónicos.
+La mayoría de veces suele ser un éxito, ya que algunos cortafuegos o antivirus dan por alto estos ataques, de este modo los ciberdelincuentes empiezan a escalar privilegios hasta obtener el control total del sistema, aquí podemos llegar a la conclusión de que las víctimas dan el acceso.</p>
+</li>
+</ul>
+<p>Un claro ejemplo explot fue el llamado Eternal Blue, que se aprovechó de la vulnerabilidad en el protocolo SMB en la versión 1, que estaba presente en todos los sistemas operativos de windows, desde su versión 95 al 10. Es capaz de brindarnos control total de una máquina, otorgando la capacidad de ejecutar código a nivel administrador.</p>
+<h2 id="qué-es-la-vulnerabilidad">¿Qué es la vulnerabilidad?</h2>
+<p><a href="https://netcloudengineering.com/wp-content/uploads/2017/06/vulnerabilidades-ciberseguridad.jpg">vulnerabilidad</a></p>
+<p>Una vulnerabilidad  es una debilidad o un error en el código de un sistema que puede ser explotado para obtener acceso no autorizado o realizar acciones no autorizadas en un sistema informático comprometer la seguridad permitiendo a los atacantes ejecutar código, acceder a la memoria de un sistema, instalar malware y robar, destruir o modificar datos confidenciales.</p>
+<h3 id="ejemplos-de-vulnerabilidad">Ejemplos de vulnerabilidad</h3>
+<ul>
+<li>
+<p>Autenticación rota:
+En la autenticación rota, cada vez que un usuario inicia sesión en su cuenta, se crea una identificación de sesión, y esa identificación de sesión solo se permite para esa cuenta en particular. En caso de que la aplicación web no esté diseñada de forma segura, el atacante puede usar varias técnicas dadas:</p>
+<ul>
+<li>Relleno de credenciales</li>
+<li>Contraseñas sin cifrar</li>
+<li>Tiempos de espera de sesión mal configurados</li>
+</ul>
+</li>
+<li>
+<p>Inyección de SQL:
+Es un tipo de vulnerabilidad en la que un atacante inserta su propio código en un sitio web con el fin acceder a datos protegidos o sensibles.</p>
+</li>
+<li>
+<p>Secuencias de comandos entre sitios:
+Son un tipo de vulnerabilidad de los sitios web, que permite que los atacantes coloquen secuencias de comandos maliciosas en páginas web.</p>
+</li>
+</ul>
+<p><a href="https://academy.avast.com/hs-fs/hubfs/What_is_scross-site_scripting-1.png?width=600&amp;name=What_is_scross-site_scripting-1.png">Vulnerabilidad</a></p>
+<ul>
+<li>
+<p>Falsificación de solicitudes entre sitios:
+Es un ataque contra aplicaciones hospedadas en web en las que una aplicación web malintencionada puede influir en la interacción entre un explorador cliente y una aplicación web que confía en ese explorador.</p>
+</li>
+<li>
+<p>Configuración incorrecta de seguridad:
+Son controles de seguridad que se configuran incorrectamente o se dejan inseguros, lo que pone en riesgo sus sistemas y datos.</p>
+</li>
+</ul>
+<h2 id="qué-es-el-payload">¿Qué es el payload?</h2>
+<p>En informática, un payload es una carga de capacidad en un paquete o en otros medios de transmisión. Dicho término está arraigado en el mundo militar y a veces está asociado con la capacidad de código malicioso con el fin de dañar. Podemos encontrarnos con data payloads o malware payload. Del primero podemos decir que se produce cuando el dato es enviado por un destino de comunicación, y el segundo es un código malicioso que pretende hacer daño al objetivo señalado.</p>
+<p><a href="https://esgeeks.com/media/2022/03/Concepto-payload-carga-u%CC%81til.jpg">payload</a></p>
+<h3 id="ejemplos">Ejemplos</h3>
+<p>Un ejemplo de Data pyload sería a través de un paquete IP. Este puede contener un payload con comandos emitidos por el último usuario, como una solicitud de un contenido web. Aunque, a menudo, consiste en transmitir datos por un servidor en respuesta a un usuario solicitante.  Los límites de los payloads en las PDUs (Protocol Data Unit) son con frecuencia especificados por un protocolo, y el tamaño máximo para un PDU individual raramente cambia.</p>
+<p><a href="https://cdn-icons-png.flaticon.com/512/1995/1995756.png">icono</a></p>
+<p>El tamaño máximo de payloads por paquetes de IP está limitado por el campo de longitud total (total length) en la cabecera del paquete IP; este campo tiene una longitud de 16 bits, lo que significa que el valor máximo posible es 2¹⁶ y el  valor más alto posible para la longitud del paquete es de 65535, menos del número de bytes que requiere un encabezado de paquete. El MTU para paquetes IP varía por el sistema y la red. La IP original estándar especifica que todos los hosts deben ser capaces de aceptar paquetes tan largos como sean de 576 bytes con los payload data de 512 bytes y los 64 de la cabecera. El valor predeterminado MTU actualmente aceptado para paquetes IPv4 es de 1500 bytes por la compatibilidad con los segmentos Ethernet.</p>
+<p>En cuanto a un payload malicioso (o malware payload) podemos poner como ejemplo todos aquellos correos electrónicos o incluso SMS que contienen un virus autorreplicante alojado en un enlace. Los atacantes eluden las defensas, mantienen la carga y atacan a la víctima. Esta vía, la de métodos de distribución comprobados, como los emails de suplantación de identidad y los gusanos, pueden adaptarse. Mientras no tenga límites específicos para la capacidad máxima de carga, los actores maliciosos intentarán mantenerlos en un tamaño razonable para evitar ser detectado por herramientas de detección de malware.</p>
+<p>Casi ningún tipo de malware puede ser incorporado dentro de un payload con la ayuda de un generador de payload para crear un malware ejecutable. Metasploit incluye recursos para buscar vulnerabilidades de seguridad, incluyendo un generador de payloads, que es una pequeña secuencia de código que comienza en un comando de shell explotable en el objetivo y crea un fichero binario ejecutable para permitir que el payload entre.</p>
+<p>Una vez entregado y ejecutado, el proceso de distribución infecta al sistema objetivo, a menos que haya un sistema de detección de malware. Una carga útil puede contener cualquier tipo de malware, incluido el ransomware, el reclutamiento de botnets u otros tipos de virus o gusanos.</p>
+<p><a href="https://www.techtarget.com/searchsecurity/definition/payload">payload</a></p>
+<h2 id="conclusión">Conclusión</h2>
+<p>Ya con este contexto, podemos decir que un exploit es un pequeño programa o un pedazo de código que se aprovecha o explota de una vulnerabilidad encontrada, mientras que un payload viene siendo esa acción que queremos hacer una vez que hemos explotado la vulnerabilidad.</p>
+<p>Tanto el exploit como el payload son pedazos de código que funcionan en conjunto para un fin, que en este caso, sería explotar la vulnerabilidad encontrada.</p>
+<p>Y también cabe decir que dentro del mundo del hacking, existen varias herramientas automatizadas, como lo es Metaexploit, que en la práctica nos ayudan a comprender mucho mejor como funciona este par de términos, ya que no necesariamente un exploit está amarrado a un payload y viceversa. Sino que un exploit puede usar varios payloads a fin de tener una shellcon privilegios, crear usuarios, etc.</p>
+
+  
+  <h4><i class="fas fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
+<ul class="share-buttons">
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2flainwireless.github.io%2fPagina-Web-Hugo-2%2fpost%2farticulo%2farticulo1%2f" target="_blank" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2flainwireless.github.io%2fPagina-Web-Hugo-2%2fpost%2farticulo%2farticulo1%2f" target="_blank" title="Tweet"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="https://plus.google.com/share?url=https%3a%2f%2flainwireless.github.io%2fPagina-Web-Hugo-2%2fpost%2farticulo%2farticulo1%2f" target="_blank" title="Share on Google+"><i class="fab fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2flainwireless.github.io%2fPagina-Web-Hugo-2%2fpost%2farticulo%2farticulo1%2f" target="_blank" title="Post to Tumblr"><i class="fab fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2flainwireless.github.io%2fPagina-Web-Hugo-2%2fpost%2farticulo%2farticulo1%2f" target="_blank" title="Pin it"><i class="fab fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
+	</li>&nbsp;&nbsp;&nbsp;
+	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2flainwireless.github.io%2fPagina-Web-Hugo-2%2fpost%2farticulo%2farticulo1%2f" target="_blank" title="Submit to Reddit"><i class="fab fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
+	</li>
+</ul>
+
+
+<style>
+	ul.share-buttons{
+	  list-style: none;
+	  padding: 0;
+	}
+
+	ul.share-buttons li{
+	  display: inline;
+	}
+
+	ul.share-buttons .sr-only{
+	  position: absolute;
+	  clip: rect(1px 1px 1px 1px);
+	  clip: rect(1px, 1px, 1px, 1px);
+	  padding: 0;
+	  border: 0;
+	  height: 1px;
+	  width: 1px;
+	  overflow: hidden;
+	}
+</style>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="https://lainwireless.github.io/Pagina-Web-Hugo-2/post/practica/prueba1/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://lainwireless.github.io/Pagina-Web-Hugo-2/post/practica/prueba1/">Prueba - Introducción a la implantación de aplicaciones web.</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+  
+  
+  
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'Your Disqus shortname';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+
+</div>
+
+</div>
+</div>
+<script src="https://lainwireless.github.io/Pagina-Web-Hugo-2/js/ui.js"></script>
+<script src="https://lainwireless.github.io/Pagina-Web-Hugo-2/js/menus.js"></script>
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=Your%20Google%20Analytics%20tracking%20ID"></script>
+<script>
+  
+  if (window.location.hostname != "localhost") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'Your Google Analytics tracking ID');
+  }
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
