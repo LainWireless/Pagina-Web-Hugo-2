@@ -47,5 +47,15 @@ Debemos tener en cuenta que estos términos son utilizados principalmente cuando
 Entrega Al instalar Debian 11 en un disco externo de 1TB he tenido algún que otro problema a la hora de que el ordenador reconociese una vez ya instalado Debian que en el disco se encontraba el sistema operativo.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://lainwireless.github.io/Pagina-Web-Hugo-2/post/practica/paquetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lainwireless.github.io/Pagina-Web-Hugo-2/post/practica/paquetes/</guid>
+      <description>Ejercicios gestión de paquetería Trabajo con apt, aptitude, dpkg Prepara una máquina virtual con Debian bullseye, realizar las siguientes acciones: 1. Que acciones consigo al realizar apt update y apt upgrade. Explica detalladamente.
+ (sudo) apt update: Actualiza la lista de paquetes disponibles y sus versiones en los repositorios (/etc/apt/sources.list), aunque no instala nada. (sudo) apt upgrade: Debe usarse tras el comando anterior, permite instalar, en el caso de no tener el paquete instalado, y actualizar versiones de los ya instalados.</description>
+    </item>
+    
   </channel>
 </rss>
