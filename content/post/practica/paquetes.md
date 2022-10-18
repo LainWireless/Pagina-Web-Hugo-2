@@ -1,3 +1,10 @@
+---
+author: "Iván Piña Castillo"
+date: 2022-10-18
+linktitle: Ejercicios Gestión de Paquetería
+title: Ejercicios Gestión de Paquetería.
+---
+
 # **Ejercicios gestión de paquetería**
 ## **Trabajo con apt, aptitude, dpkg**
 ### **Prepara una máquina virtual con Debian bullseye, realizar las siguientes acciones:**
